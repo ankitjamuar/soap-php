@@ -6,5 +6,11 @@ $options = array(
 	'soap_version' => SOAP_1_2,
 );
 $client = new SoapClient(null, $options);
-echo $client->hello('Tomasz');
-echo $client->getAgeString('John', 47);
+
+try {
+  echo $client->helloWorld('Tomasz');
+  echo $client->getAgeString('John', 47);
+} catch (SoapFault $sf) {
+  echo "faultcode: $sf->faultcode\n";
+  echo "faultstring: $sf->faultstring\n";
+}
