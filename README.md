@@ -1,4 +1,4 @@
 soap-php
 ========
 
-SOAP/PHP tutorial
+SOAP/PHP tutorial - visit http://soap-php.blogspot.com/
