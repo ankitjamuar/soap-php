@@ -23,6 +23,8 @@ class Service {
    * @return  string
    */
   public function getAgeString($name, $age) {
+    if (!is_int($age))
+      throw new SoapFault('500', 'age parameter must be integer');
     return sprintf("%s is %d years old\n", $name, $age);
   }
 }

@@ -8,8 +8,9 @@ $options = array(
 $client = new SoapClient(null, $options);
 
 try {
-  echo $client->helloWorld('Tomasz');
-  echo $client->getAgeString('John', 47);
+  echo $client->hello('Tomasz');
+  echo $client->getAgeString('John', 'NaN');
+  echo $client->getAgeString('John', '47');
 } catch (SoapFault $sf) {
   echo "faultcode: $sf->faultcode\n";
   echo "faultstring: $sf->faultstring\n";
