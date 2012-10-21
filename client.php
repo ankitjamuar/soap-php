@@ -7,3 +7,4 @@ $options = array(
 );
 $client = new SoapClient(null, $options);
 echo $client->hello('Tomasz');
+echo $client->getAgeString('John', 47);
