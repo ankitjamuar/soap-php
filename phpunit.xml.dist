@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="autoload.php" colors="true">
+    <testsuites>
+        <testsuite name="SymfonyWorld Test Suite">
+            <directory>libs/vendor/SymfonyWorld/tests/SymfonyWorld/</directory>
+        </testsuite>
+        <testsuite name="SymfonyWorld Soap Test Suite">
+            <directory>libs/SymfonyWorld/tests/SymfonyWorld/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">libs/vendor/SymfonyWorld/src/SymfonyWorld/</directory>
+            <directory suffix=".php">libs/SymfonyWorld/</directory>
+        </whitelist>
+    </filter>
+</phpunit>

@@ -1,0 +1,9 @@
+[submodule "libs/vendor/Monolog"]
+	path = libs/vendor/Monolog
+	url = https://github.com/Seldaek/monolog.git
+[submodule "libs/vendor/SymfonyWorld"]
+	path = libs/vendor/SymfonyWorld
+	url = https://github.com/tkoomzaaskz/SymfonyWorld.git
+[submodule "libs/vendor/ZendFramework"]
+	path = libs/vendor/ZendFramework
+	url = https://github.com/zendframework/zf2.git
